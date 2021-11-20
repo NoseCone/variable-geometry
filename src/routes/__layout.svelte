@@ -1,45 +1,30 @@
 <script>
 	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
+	import '../site.css';
+	import About from './about.svelte';
 </script>
 
-<Header />
+<Header>
+	<link href="/site.css" rel="stylesheet" />
+</Header>
 
 <main>
+	<div class="spacer"></div>
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+<footer class="footer">
+	<div class="container">
+		<div class="content">
+			<div class="is-size-7">
+				<strong title="app-view-0.29 2020-12-19T14:27">Flare Timing</strong> by
+				<a href="http://www.blockscope.com" target="_blank">Block Scope</a><br />(<a
+					href="http://www.flaretiming.com/about.html"
+					target="_blank">About</a
+				>, <a href="http://www.flaretiming.com/disclaim.html" target="_blank">Disclaimer</a>,
+				<a href="http://www.flaretiming.com/blog.html" target="_blank">Blog</a>)<br /><br />Map data
+				© <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors
+			</div>
+		</div>
+	</div>
 </footer>
-
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
-</style>
