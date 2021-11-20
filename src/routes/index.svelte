@@ -3,11 +3,10 @@
 </script>
 
 <script>
-	import CompHeader from './CompHeader.svelte';
-	import CompTasks from './CompTasks.svelte';
-	import CompTabs from './CompTabs.svelte';
-	import Breadcrumb from './Breadcrumb.svelte';
-	import Counter from '$lib/Counter.svelte';
+	import CompHeader from '$lib/CompHeader.svelte';
+	import CompTasks from '$lib/CompTasks.svelte';
+	import CompTabs from '$lib/CompTabs.svelte';
+	import Breadcrumb from '$lib/Breadcrumb.svelte';
 </script>
 
 <svelte:head>
