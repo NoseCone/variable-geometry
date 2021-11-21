@@ -6,12 +6,8 @@
 	import CompHeader from '$lib/CompHeader.svelte';
 	import Breadcrumb from '$lib/Breadcrumb.svelte';
 	import CompTabs from '$lib/CompTabs.svelte';
-	import CompTasks from '$lib/CompTasks.svelte';
+	import CompPilots from '$lib/CompPilots.svelte';
 </script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
 
 <section>
 	<div class="container is-size-7">
@@ -21,7 +17,7 @@
 			<div class="spacer" />
 			<Breadcrumb />
 			<CompTabs />
-			<CompTasks />
+			<CompPilots />
 		</div>
 		<div class="spacer" />
 	</div>
