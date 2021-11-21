@@ -8,21 +8,15 @@
 
 	onMount(async () => {
 		fetch('http://2017-dalby.flaretiming.com/json/task-length/task-lengths.json')
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				taskLengths.set(data);
-			})
+			.then(response => response.json())
+			.then(data => taskLengths.set(data))
 			.catch((error) => {
 				console.log(error);
 				return [];
 			});
 		fetch('http://2017-dalby.flaretiming.com/json/comp-input/tasks.json')
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				tasks.set(data);
-			})
+			.then(response => response.json())
+			.then(data => tasks.set(data))
 			.catch((error) => {
 				console.log(error);
 				return [];

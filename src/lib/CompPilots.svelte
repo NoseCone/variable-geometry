@@ -8,11 +8,8 @@
 
 	onMount(async () => {
 		fetch('http://2017-dalby.flaretiming.com/json/gap-point/pilots-status.json')
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				pilotsStatus.set(data);
-			})
+			.then(response => response.json())
+			.then(data => pilotsStatus.set(data))
 			.catch((error) => {
 				console.log(error);
 				return [];

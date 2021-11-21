@@ -8,22 +8,16 @@
 
 	onMount(async () => {
 		fetch('http://2017-dalby.flaretiming.com/json/comp-input/comps.json')
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				comp.set(data);
-			})
-			.catch((error) => {
+			.then(response => response.json())
+			.then(data => comp.set(data))
+			.catch(error => {
 				console.log(error);
 				return [];
 			});
 		fetch('http://2017-dalby.flaretiming.com/json/comp-input/nominals.json')
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data);
-				nominals.set(data);
-			})
-			.catch((error) => {
+			.then(response => response.json())
+			.then(data => nominals.set(data))
+			.catch(error => {
 				console.log(error);
 				return [];
 			});
