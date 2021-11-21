@@ -56,3 +56,5 @@ export const tasksWithZones = derived([tasks, taskLengths], ($xs, set) => {
 
   set(ys);
 })
+
+export const pilotsStatus = writable([])

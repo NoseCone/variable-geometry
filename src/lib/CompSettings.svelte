@@ -17,16 +17,16 @@
 		<tr>
 			<th>* Give</th>
 			<td colspan="2">give fraction only, no give distance</td>
-			<td>0.00500</td>
+			<td>{$comp.give.giveFraction}</td>
 		</tr>
 		<tr>
 			<th>Earth model</th>
 			<td colspan="2">Sphere with radius</td>
-			<td>6371000 m</td>
+			<td>{$comp.earth.sphere.radius}</td>
 		</tr>
 		<tr>
 			<th colspan="3">Earth math</th>
-			<td>Haversines</td>
+			<td>{$comp.earthMath}</td>
 		</tr>
 	</tbody>
 	<tfoot>
