@@ -1,12 +1,10 @@
 <script>
-	import Header from '$lib/header/Header.svelte';
 	import '../site.css';
-	import About from './about.svelte';
 </script>
 
-<Header>
+<header>
 	<link href="/site.css" rel="stylesheet" />
-</Header>
+</header>
 
 <main>
 	<div class="spacer"></div>
