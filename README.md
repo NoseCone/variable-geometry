@@ -32,3 +32,11 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## Publishing
+
+Build on branch `develop`, switch to branch `main` and then copy the build to the root, commit and push.
+
+```bash
+> cp -a build/ .
+```
