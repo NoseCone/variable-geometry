@@ -2,10 +2,6 @@
 	import '../site.css';
 </script>
 
-<header>
-	<link href="/site.css" rel="stylesheet" />
-</header>
-
 <main>
 	<div class="spacer"></div>
 	<slot />
