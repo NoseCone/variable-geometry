@@ -8,7 +8,7 @@
 			<article class="tile is-child notification is-light">
 				<p class="title">Variable Geometry</p>
 				<p class="subtitle">
-					Comp scored with <a href="https://flaretiming.com">Flare Timing</a> and presented with
+					Comps scored with <a href="https://flaretiming.com">Flare Timing</a> and presented with
 					<a href="https://svelte.dev/">Svelte</a>
 				</p>
 			</article>
