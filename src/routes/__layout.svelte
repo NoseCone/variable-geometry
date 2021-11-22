@@ -3,8 +3,10 @@
 </script>
 
 <main>
-	<div class="spacer"></div>
-	<slot />
+	<div class="container">
+		<div class="spacer" />
+		<slot />
+	</div>
 </main>
 
 <footer class="footer">

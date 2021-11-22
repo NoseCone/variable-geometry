@@ -4,17 +4,17 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import { comp, compSlug, nominals } from '../store.js';
+	import { compUrl, comp, compSlug, nominals } from '../store.js';
 
 	onMount(async () => {
-		fetch('http://2017-dalby.flaretiming.com/json/comp-input/comps.json')
+		fetch($compUrl + '/comp-input/comps.json')
 			.then(response => response.json())
 			.then(data => comp.set(data))
 			.catch(error => {
 				console.log(error);
 				return [];
 			});
-		fetch('http://2017-dalby.flaretiming.com/json/comp-input/nominals.json')
+		fetch($compUrl + '/comp-input/nominals.json')
 			.then(response => response.json())
 			.then(data => nominals.set(data))
 			.catch(error => {

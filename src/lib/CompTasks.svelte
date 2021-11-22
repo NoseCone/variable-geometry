@@ -4,17 +4,17 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import { tasksWithZones, tasks, taskLengths } from '../store.js';
+	import { compUrl, tasksWithZones, tasks, taskLengths } from '../store.js';
 
 	onMount(async () => {
-		fetch('http://2017-dalby.flaretiming.com/json/task-length/task-lengths.json')
+		fetch($compUrl + '/task-length/task-lengths.json')
 			.then(response => response.json())
 			.then(data => taskLengths.set(data))
 			.catch((error) => {
 				console.log(error);
 				return [];
 			});
-		fetch('http://2017-dalby.flaretiming.com/json/comp-input/tasks.json')
+		fetch($compUrl + '/comp-input/tasks.json')
 			.then(response => response.json())
 			.then(data => tasks.set(data))
 			.catch((error) => {
@@ -40,7 +40,7 @@
 		<tr>
 			<td>{i + 1}</td>
 			<td class="td-task-name">{task.taskName}</td>
-			<td class="td-task-tps"><a>{task.zoneNames}</a></td >
+			<td class="td-task-tps">{task.zoneNames}</td >
 			<td class="td-task-dist">{task.distance}</td>
 			<td class="td-task-stopped">{task.stopped}</td>
 			<td class="td-task-cancelled">{task.cancelled}</td>

@@ -6,7 +6,7 @@
 
 <nav class="breadcrumb">
 	<ul>
-		<li><a href="http://flaretiming.com">Flare Timing</a></li>
-		<li class="is-active"><a href="#">{$comp.compName}</a></li>
+		<li><a href="/">Variable Geometry (Svelte)</a></li>
+		<li class="is-active">{$comp.compName}</li>
 	</ul>
 </nav>

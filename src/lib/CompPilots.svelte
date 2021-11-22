@@ -4,10 +4,10 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import { pilotsStatus, tasks } from '../store.js';
+	import { compUrl, pilotsStatus, tasks } from '../store.js';
 
 	onMount(async () => {
-		fetch('http://2017-dalby.flaretiming.com/json/gap-point/pilots-status.json')
+		fetch($compUrl + '/gap-point/pilots-status.json')
 			.then(response => response.json())
 			.then(data => pilotsStatus.set(data))
 			.catch((error) => {

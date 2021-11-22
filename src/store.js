@@ -58,3 +58,7 @@ export const tasksWithZones = derived([tasks, taskLengths], ($xs, set) => {
 })
 
 export const pilotsStatus = writable([])
+export const compPrefix = writable("2017-dalby")
+export const compUrl = derived(compPrefix, $prefix => 'http://' + $prefix + '.flaretiming.com/json')
+compPrefix.subscribe(x => console.log("compPrefix", x))
+compUrl.subscribe(x => console.log("compUrl", x))
