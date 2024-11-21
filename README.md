@@ -3,6 +3,7 @@
 ## Developing
 
 Work on the stylesheet `site.sass` with:
+
 ```bash
 > cd src
 > sass --watch site.sass:site.css --load-path ../node_modules
@@ -20,6 +21,7 @@ npm run dev -- --open
 ## Building
 
 Build the stylesheet `site.css` with:
+
 ```bash
 > cd src
 > sass site.sass:site.css --load-path ../node_modules
