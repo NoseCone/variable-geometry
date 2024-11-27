@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 	import CompHeader from '$lib/CompHeader.svelte';
 	import Breadcrumb from '$lib/Breadcrumb.svelte';

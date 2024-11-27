@@ -1,11 +1,12 @@
 <script>
 	import '../site.css';
+	let {children} = $props();
 </script>
 
 <main>
 	<div class="container">
-		<div class="spacer" />
-		<slot />
+		<div class="spacer" ></div>
+		{@render children()}
 	</div>
 </main>
 
